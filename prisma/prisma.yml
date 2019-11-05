@@ -1,0 +1,12 @@
+# The HTTP endpoint for your Prisma API
+#endpoint: ''
+endpoint: https://eu1.prisma.sh/baileydust-0a577a/graphql_test/dev
+
+# Points to the file that contains your datamodel
+#The Prisma API only is an interface to the database, but doesn't allow for any sort of application logic which is needed in most apps
+datamodel: datamodel.prisma
+
+# Specifies language & location for the generated Prisma client
+generate:
+  - generator: javascript-client
+    output: ../src/generated/prisma-client
